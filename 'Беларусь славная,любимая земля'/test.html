@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a rel='m_PageScroll2id' href="#box" onclick="openbox('box'); return false">Оставить отзыв</a>
+    <div id="box" style="display: none;">1212312</div>
+    <script>
+        function openbox(box){
+      display = document.getElementById(box).style.display;
+      if(display=='none'){
+            document.getElementById(box).style.display='block';
+      }else{
+            document.getElementById(box).style.display='none';
+      }
+}
+    </script>
+</body>
+</html>

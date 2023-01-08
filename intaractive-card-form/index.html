@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <aside>
+          <div class="aside-fontcard one">
+            <div class="aside-fontcard-top">
+                <p class="font font-top">
+                    0000 0000 0000 0000
+                </p>
+            </div>
+            <div class="aside-fontcard-bottom">
+                <p class="font">
+                    e.g Jane Appleseed
+                </p>
+               <div class="font-top-age">
+                <p>00</p><p>/</p><p>00</p>
+               </div>
+            </div>
+          </div>
+          <div class="aside-fontcard two">
+            <p class="fontcard back">000</p>
+          </div>
+        </aside>
+        <section>
+            <form class="section-content">
+            <div class="input-section">
+                <p class="input-name">Cardholder name</p>
+                <input class="input-first input-tag"  id="input" type="text" placeholder="e.g Jane Appleseed">
+                <div id="error"></div>
+            </div>
+            <div class="input-section">
+                <p class="input-name">Cardholder number</p>
+                <input class="input-first input-num" type="text" placeholder="e.g 1234 5678 9123 0000">
+                <div id="error"></div>
+            </div>
+            <div class="input-section section-last section-last-p">
+                <p class="input-name">EXP. DATE(MM/YY)</p>
+                <p class="input-name">CVC</p>
+            </div>
+            <div class="input-section section-last">
+                <input type="text" class="input-mm" placeholder="MM"><input class="input-yy" type="text" placeholder="YY"><input class="input-cvc" type="text"placeholder="e.g 123">
+            </div>
+            <div class="input-section section-last">
+                <div id="error"></div>  <div id="error"></div>
+            </div>
+            <div class="input-section section-last section-submit">
+                <input type="submit">
+            </div>
+            </form>
+        </section>
+    </main>
+    <script>
+      let input=document.querySelector(".input-tag");
+      console.log(input);
+      document.querySelector(".input-tag").onblur = function() {
+      if (!input.value.includes('@')) { // не email
+        input.classList.add('invalid');
+        error.innerHTML = 'Пожалуйста, введите правильный email.'
+      }
+    };
+        </script>
+</body>
+</html>

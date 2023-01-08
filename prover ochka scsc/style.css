@@ -1,0 +1,17 @@
+.block {
+  padding: 15px;
+  background-color: #3ace62;
+  height: 20px;
+}
+
+.list {
+  padding: 15px;
+  background-color: black;
+  height: 20px;
+}
+
+.rere {
+  padding: 20px;
+  background-color: red;
+  height: 20px;
+}

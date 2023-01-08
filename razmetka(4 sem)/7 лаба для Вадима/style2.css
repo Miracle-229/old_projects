@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("ff/MyriadPro-Regular.eot");
+    src: url("ff/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+      url("ff/MyriadPro-Regular.woff") format("woff"),
+      url("ff/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Athelas Regular";
+    src: url(ff/Athelas-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Helvetica";
+    src: url(ff/HelveticaThin.ttf);
+  }
+  @font-face {
+    font-family: "Vani";
+    src: url(ff/Vani.ttf);
+  }
+  .page {
+    background-color: #2f434b;
+    height: 100vh;
+  }
+  .page h1{
+    color: #fff;
+    font-family: "Athelas Regular";
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 56px;
+  }
+  p{
+    color: #fff;
+    font-family: "Athelas Regular";
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 36px; 
+  }
+  label{
+      color: black;
+      font-family: "Athelas Regular";
+      font-size: 36px; 
+  }
+  .contact{
+      margin-top: 110px;
+      vertical-align: middle;
+      line-height: 10vh;
+  }

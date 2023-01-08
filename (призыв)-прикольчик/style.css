@@ -1,0 +1,63 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "ARIAL BLACK";
+    text-transform: uppercase;
+    
+    background-image: url(fon-for-backround.jpg);
+    
+
+    
+    
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+h1{
+    
+  font-size: 75px; 
+  letter-spacing: 0.25em;
+  color:transparent;
+  position: relative;
+  
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    justify-content: center;
+    top:0;
+    left:0;
+    width: 100%;
+    color: #9A801D;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate{
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    
+}
+.content img{
+    position: relative;
+}
+.content h3{
+    font-size: 40px;
+    text-align: center;
+    color: #9A801D;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -10px;
+}

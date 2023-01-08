@@ -1,0 +1,23 @@
+.game{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    max-width: 608px;
+}
+.restart{
+    padding: 5px 10px;
+    background-color: rgb(9, 75, 9);
+    font-size: 40px;
+    font-family: monospace;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+}

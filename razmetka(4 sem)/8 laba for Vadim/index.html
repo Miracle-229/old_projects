@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+<div class="calculator">
+    <output></output>
+</div>
+<script src="https://unpkg.com/mathjs@10.4.1/lib/browser/math.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+<script>
+    const output = document.querySelector('output');
+    const div = document.createElement('div');
+    div.className += 'keyboard';
+    document.querySelector('.calculator').appendChild(div);
+    const buttons =
+        'Acos C CE % / ' +
+        '|| 7 8 9 * ' +
+        'TanH 4 5 6 - ' +
+        'Log10 1 2 3 + ' +
+        '. 0 ( ) = ' +
+        'E^';
+    buttons.split(' ').map(key => {
+        div.insertAdjacentHTML('beforeend', `<button value="${key}">${key}</button>`)
+    });
+    document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', function () {
+            calculate(this.value);
+        });
+    });
+    document.addEventListener('keydown', e => {
+       if((e.key).match(/[0-9%\/*\-+\(\)=.]|Backspace|Enter/))
+           calculate(e.key);
+    });
+    function finiteTest (value) {
+        return value == '-Infinity' || value == 'Infinity' || isNaN(value) ? 'Ошибка' : value;
+    }
+    //const m = math.create(math.all, {});
+    function calculate(key){
+        try{
+
+            switch(key){
+                case "Enter":
+                case "=":
+                    const result = math.evaluate(output.textContent);
+                    output.textContent = finiteTest(result);
+                    break;
+                case 'PI':
+                    output.textContent = math.PI.toFixed(4);
+                    break;
+                case 'TanH':
+                    output.textContent = math.tanh(output.textContent);
+                    break;
+                case '||':
+                    output.textContent = math.abs(output.textContent);
+                    break;
+                case 'Log10':
+                    const res = math.log10(output.textContent);
+                    output.textContent = finiteTest(res);
+                    break;
+                case 'Acos':
+                    output.textContent =math.acos(output.textContent);
+                    break;
+                case 'E^':
+                    output.textContent =math.exp(output.textContent);
+                    break;
+                case 'C':
+                    output.textContent = '';
+                    break;
+                case 'CE':
+                case 'Backspace':
+                    output.textContent = output.textContent.substring(0, output.textContent.length - 1);
+                    break;
+                default:
+                    output.textContent += key;
+            }
+        } catch {
+            output.textContent = 'Ошибка.';
+        }
+    }
+</script>
+</body>
+</html>

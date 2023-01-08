@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normilize.css">
+  </head>
+  <body>
+    <div class="page">
+    <div class="contact">
+      <h1>contact us</h1>
+          <form class="wrap">
+          <div class="wrap-line">
+              <!-- Inputs -->
+              <div class="brise-input">
+                  <input id="name"  type="text" name="name" maxlength="20" onkeypress="noDigits(event)"  required>
+                  <label>Name</label>
+                  <span class="line"></span>
+              </div>
+              <div class="brise-input">
+                  <input id="surname" type="text" name="surname" maxlength="30" onkeypress="noDigits(event)" required>
+                  <label>Surname</label>
+                  <span class="line"></span>
+              </div>
+  </div>
+  <div class="wrap-line second">
+      <!-- Inputs -->
+      <div class="brise-input ">
+          <input type="password" id="pass" name="pass" required >
+          <a href="#" class="password-control" onclick=" show_hide_password(this);"></a>
+          <label>Password</label>
+          <span class="line"></span>
+      </div>
+      <div class="brise-input">
+          <input type="password" name="reppass" id="repPass" required>
+          <a href="#" class="password-control" onclick=" show_hide_password_second(this);"></a>
+          <label>Repeat password</label>
+          <span class="line"></span>
+      </div>
+</div>
+<div class="wrap-line second">
+<!-- Inputs -->
+<div class="brise-input email_div">
+  <input id="email_1" type="email"  name="email" onchange="this.setAttribute('value', this.value);"  value="" required>
+  <label id="email_label">Email</label>
+  <span class="line"></span>
+</div>
+<div class="brise-input">
+  <input name="date" type="text" min='1969-01-01'  id="date" onchange="funcOld(this)" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+  <label>Date of birth</label>
+  <span class="line"></span>
+</div>
+</div>
+
+<div class="wrap-line second">
+  <!-- Inputs -->
+  <div class="brise-input">
+    <select id="Gender"  name="email2" required> 
+      <option class="option-first"></option> 
+      <option>Мужчина</option> 
+      <option>Женщина</option>  
+      </select>
+      <label>Gender</label>
+    <span class="line"></span>
+  </div>
+  <div class="brise-input">
+    <select id="Gender"  name="email3" required> 
+      <option class="option-first"></option> 
+      <option>Пение</option> 
+      <option>Танцы</option> 
+      <option>Каратэ</option> 
+      </select>
+    <label>Area of interest</label>
+    <span class="line"></span>
+  </div>
+  </div>
+
+<div class="button-section">
+<input type="submit" href="" id="wrap-button"  value="отправить" onclick="new_page()"  >
+
+
+</input>
+</div>
+<span id="result"></span>
+<button onclick="reset()" class="any-button"> Очистить</button>
+</form>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="script.js"></script>
+
+
+  </body>
+</html>

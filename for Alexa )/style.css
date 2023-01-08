@@ -1,0 +1,76 @@
+body{
+    font-family: 'Bradley Hand', cursive;
+}
+.header{
+    background-color:#1E1E1E;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.links img{
+    max-height:50px ;
+    max-width: 50px;
+}
+.links ul li{
+    display: inline-block;
+    margin-right: 40px;
+    
+}
+h2{
+    margin-top:25px;
+    margin-left: 35px;
+    color:white;
+    
+}
+.inf{
+    min-height: 500px ;
+    background-color: #FAEBD7;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.inf img{
+    max-width: 400px;
+    max-height: 200px;
+    
+}
+.inf_text {
+    color:#1e1e1e ;
+}
+.inf_img,.inf_text{
+    margin-top: 150px;
+}
+h3{
+    text-align: center;
+}
+.edu_txt{
+    justify-content: center;
+    display: flex;
+}
+.edu_txt{
+    text-align: center;
+    line-height: 3.5;
+}
+hr{
+    border-width: 3px;
+    border-color:#FAEBD7 ;
+}
+.skuls{
+    display: flex;
+    justify-content: space-evenly;
+}
+.list{
+    text-align: center;
+}
+.footer{
+    height: 100px;
+    background-color: #1E1E1E;
+    text-align: center;
+    padding-top: 5px;
+}
+.footer p{
+    color:white;
+    margin-top: 45px;
+    
+}

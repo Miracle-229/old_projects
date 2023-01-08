@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Команда AlexBooster</title>
+    <link rel="stylesheet" type="text/css" href="team_style.css">
+</head>
+<body>
+    <section>
+       <div class="bg">
+           <img src="bg.jpg" data-speed="-2">
+       </div>
+        <img src="text_team2.png" class="layer team1" data-speed="-4">
+        <img src="text_team1.png" class="layer team2" data-speed="4">
+        <img class="layer team3" src="model_fot_team.png" data-speed="2">
+        <a href="https://vk.com/id301670336"><img src="vk.png" class="layer team4" data-speed="2"></a>
+    </section>
+    <script type="text/javascript">
+  document.addEventListener('mousemove', parallax);
+function parallax(e){
+  this.querySelectorAll('.layer').forEach(layer =>{
+    var speed = layer.getAttribute('data-speed');
+    var x     = (window.innerWidth - e.pageX * speed)/100;
+    var y     = (window.innerWidth - e.pageY * speed)/100;
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+  });
+}
+    </script>
+</body>
+</html>

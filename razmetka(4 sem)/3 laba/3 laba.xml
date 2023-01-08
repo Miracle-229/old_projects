@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="musicstore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="music" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="lang" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="author"/>
+              <xs:element type="xs:short" name="year"/>
+              <xs:element type="xs:string" name="style" minOccurs="0"/>
+              <xs:element type="xs:string" name="price" minOccurs="0"/>
+              <xs:element type="xs:float" name="duration"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="category" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+<musicstore>
+   <music category="For recreation">
+      <title lang="en">All Star</title>
+      <author>Smash Mouth</author>
+      <year>1999</year>
+      <style>Rock</style>
+      <duration>3.14</duration>
+   </music>
+   <music category="For training">
+      <title lang="en">Antarktica</title>
+      <author>$uisideboy$</author>
+      <year>2017</year>
+      <style>Hip Hop</style>\
+      <duration>2.26</duration>
+   </music>
+   <music category="For study">
+      <title lang="Uk">Anthem of Ukraine</title>
+      <author>Павел Чубинский</author>
+      <year>1992</year>
+      <price>Rock</price>
+      <duration>3.54</duration>
+   </music>
+   <music category="For sleep">
+      <title lang="Uk">Balamut</title>
+      <author>	Smeshariki</author>
+      <year>2007</year>
+      <price>Hip Hop</price>
+      <duration>2.34</duration>
+   </music>
+</musicstore>

@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/register2/font-famaly/Inter-Regular.ttf);
+}
+body {
+  background-color: #b0b0b0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_content {
+  width: 100vh;
+  min-height: 600px;
+  background-color: #E9E9E9;
+  margin-top: 3vh;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+}
+
+.main_content_white {
+  background-color: white;
+  min-height: 520px;
+  padding-top: 50px;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  border-bottom-left-radius: 10vh;
+  border-bottom-right-radius: 10vh;
+}
+.main_content_white h1 {
+  text-align: center;
+  padding: 0%;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-size: 25px;
+}
+
+.content_registr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content_regist_page {
+  margin-bottom: 10px;
+}
+
+.registr_input {
+  display: inline;
+  margin-top: 45px;
+  position: relative;
+}
+.registr_input input {
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: "Inter";
+}
+.registr_input input:focus {
+  outline: none;
+}
+.registr_input input:active {
+  outline: none;
+}
+.registr_input:nth-child(2) {
+  margin-left: 65px;
+}
+.registr_input:nth-child(1) {
+  margin-right: 15px;
+}
+.registr_input:nth-child(1)::after {
+  background-size: cover;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 5px;
+  left: -30px;
+  margin: auto 0;
+}
+.registr_input:nth-child(2)::after {
+  background-size: cover;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 5px;
+  left: -30px;
+  margin: auto 0;
+}
+
+.login::after {
+  background: url(/register/register2/img/logo.jpg) no-repeat;
+}
+
+.email::after {
+  background: url(/register/register2/img/email-svgrepo-com.svg) no-repeat;
+}
+
+.name::after {
+  background: url(/register/register2/img/name.svg) no-repeat;
+}
+
+.phone::after {
+  background: url(/register/register2/img/phone-svgrepo-com.svg) no-repeat;
+}
+
+.age::after {
+  background: url(/register/register2/img/calendar-svgrepo-com.svg) no-repeat;
+}
+
+.password::after {
+  background: url(/register/register2/img/password.jpg) no-repeat;
+}
+
+.registr_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+::-webkit-input-placeholder {
+  font-size: 13px;
+}
+
+::-moz-placeholder {
+  font-size: 13px;
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  font-size: 13px;
+}
+
+/* ie */
+input:-moz-placeholder {
+  font-size: 13px;
+}
+
+.button_login_page {
+  font-family: "Inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.button_login_page input {
+  background-color: #B0B0B0;
+  border: none;
+  padding: 20px 110px 20px 110px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.link_registr_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-top: 35px;
+}
+.link_registr_page a {
+  text-decoration: none;
+  font-family: "Inter";
+  color: #8a8585;
+}
+
+.link_registr_other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+.link_registr_other a img {
+  max-height: 30px;
+}

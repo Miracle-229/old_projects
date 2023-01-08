@@ -1,0 +1,20 @@
+$green: #3ace62;
+$padding: 15px;
+$height:20px;
+$black: black;
+
+.block{
+    padding: $padding;
+    background-color: $green;
+    height:$height;
+}
+.list{
+    padding: $padding;
+    background-color: $black;
+    height:$height;
+}
+.rere{
+    padding: 20px;
+    background-color: red;
+    height: $height;
+}

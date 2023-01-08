@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normilize.css">
+    <script src="https://kit.fontawesome.com/db3cd96535.js" crossorigin="anonymous"></script>
+    <title>DB</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li class="nav-item-1"><button >о нас</button></li>
+            <li class="nav-item-2"><button>аккаунты</button></li>
+            <li class="nav-item-3"><button>отзывы</button></li>
+        </ul>
+        <a href=""><img class="door" src="img/door.png" alt=""></a>
+    </header>
+  <div class="main">
+      <div class="wrapper">
+      <div class="section sone">
+       <div class="name one">
+            Deboost
+        </div>
+        <div class="jpg jone">
+            <img src="img/danik.jpg" alt="">
+        </div>
+        <div class="chel cone">
+            Даник
+        </div>
+        <div class="list lone">
+            <ul>
+                <li>iq чуть больше чем у буса на Mirage</li>
+                <li>сольёт даже катку 14:0</li>
+                <li>реакция деда,который откинулся лет 5 назад</li>
+            </ul>
+        </div>
+        <div class="title_acc">
+            Аккаунт Даника
+        </div>
+        <div class="acc aone">
+            <img src="img/deboost_ak_1.jpg" alt="">
+        </div>
+    </div>
+      <div class="section stwo">
+    <div class="name two">
+           Boost
+        </div>
+        <div class="jpg jtwo">
+            <img src="img/vadimik.jpg" alt="">
+        </div>
+        <div class="chel ctwo">
+            Вадим
+        </div>
+        <div class="list ltwo">
+            <ul>
+                <li>iq чуть больше чем у Теренса Тао</li>
+                <li>выйграет даже 15:0 катку</li>
+                <li>реакция как у Simple и Device вместе взятых </li>
+            </ul>
+        </div>
+        <div class="title_acc ttwo">
+            Аккаунт Вадима
+        </div>
+        <div class="acc atwo">
+            <img src="img/boost_ak_1.jpg" alt="">
+        </div>
+    </div> 
+</div>
+    <div class="comment">
+        <div class="comment_name">
+            Отзывы
+        </div>
+        <div class="comment_user_name">
+            Даник
+        </div>
+        <div class="comment_img">
+            <img src="img/outup_deboost.jpg" alt="">
+        </div>
+        <div class="comment_user_name">
+            Вадим
+        </div>
+        <div class="comment_img">
+            <img src="img/outup_boost.jpg" alt="">
+        </div>
+        <a class="back-to-top" href="#"></a>
+    </div>
+    <div class="footer">
+        <div class="footer_button">
+                <a href="text.html" class="registr">
+                Заказать дебуст
+            <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+            </a>
+        </div>
+        <div class="footer_button">
+                <a href="text.html" class="registr">
+                    Заказать буст
+                <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+                </a> 
+            </div>
+        </div>
+</div>
+
+<script src="jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="button.js"></script>
+<script>
+    var $divs = $('div'),
+    $buttons = $('button');
+
+$buttons.live('click', function ()
+{
+    var $this = $(this),
+        index = $buttons.index(this);
+
+    window.location.hash = $divs.eq(index).attr('class');
+});
+</script>
+<script>
+    $('.nav-item-3').on('click', function() {
+  $('html,body').animate({scrollTop:$('.comment').offset().top+"px"},{duration:1E3});
+});
+</script>
+<script>
+    $('.nav-item-1').on('click', function() {
+  $('html,body').animate({scrollTop:$('.wrapper').offset().top+"px"},{duration:1E3});
+});
+</script>
+<script>
+    $('.nav-item-2').on('click', function() {
+  $('html,body').animate({scrollTop:$('.wrapper').offset().top+"px"},{duration:1E3});
+});
+</script>
+</body>
+</html>

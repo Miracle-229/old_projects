@@ -1,0 +1,239 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+li:hover{
+    cursor: pointer;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+body{
+    padding: 0;
+    margin: 0 auto;
+    background: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:  2px solid #E3E5E7;
+
+    
+}
+.logoimg{
+  height: 40px; 
+  
+  
+}
+.logo{
+    display: inline-block; 
+    border-right: 2px solid #E3E5E7;
+    padding:0px 35px;
+    
+}
+.logotext{
+    display: inline-block;
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.nav__link{
+    list-style: none;
+    
+}
+.nav__link li{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 25px;
+    font-family: "Rubik";
+    
+}
+.nav__link_i{
+    font-size: 29px;
+    margin-right: 10px;
+} 
+.nav__link_i:hover{
+    cursor: pointer;
+}
+
+form{
+    border-right: 2px solid #E3E5E7;
+    padding-right: 230px;
+    text-align: center;
+    
+
+}
+.search{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.search ::placeholder{
+    color: rgba(227, 229, 231, 0.604);
+    font-size: 15px;
+}
+.i_s{
+    margin-right: 30px;
+}
+.il{
+    margin-right: 140px;
+    display: inline-block;
+    border-right: 2px solid #E3E5E7;
+    text-align: center;
+    padding-right: 70px;
+}
+.il_2{
+    padding-right: 70px;
+}
+main{
+    margin: 0 auto;
+    padding:0px 100px  ;
+    padding-bottom: 100px;
+
+}
+h2{
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 65px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+section{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 150px;
+}
+.article{
+    border: 2px solid #D4BFBA;
+    
+}
+.article__img{
+    height: 250px;
+    width: 370px;
+}
+.article__p{
+    font-family: "Rubik";
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+    padding:0px 10px ;
+    width: 250px;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+    
+    
+}
+.article__price{
+    color: #D4BFBA;
+    font-size: 20px;
+   
+}
+.content{
+    
+}
+.button{
+float: right;
+margin-bottom: 20px;
+font-family: "Rubik";
+padding:0px 40px;
+
+}
+.button_link{
+    font-size: 20px;
+    border: 2px solid #D4BFBA;
+    padding: 5px 10px;
+    
+}
+.button_link:hover{
+    cursor: pointer;
+}
+.button_link_one{
+    border-bottom: 2px solid #D4BFBA;
+}
+.button_link_two{
+    border-top: none;
+    padding-top: 10px;
+    display: inline-block;
+}
+.button_circle{
+    height: 15px;
+    border:2px solid #D4BFBA;
+    background: transparent;
+    margin-right: 10px;
+    
+}
+
+.button_circle:hover{
+    cursor: pointer;
+}
+.button_circle:focus{
+    background-color:#D4BFBA ;
+    outline: none;
+        
+}
+footer{
+    border-top: 2px solid #D4BFBA;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+}
+h3{
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 35px;
+    margin-top: 15px;
+    color: #D4BFBA;
+    display: block
+    
+}
+.logo__footer{
+    border: none;
+    display: inline-block;
+    margin-top: 30px;
+    
+}
+.logo__footer p {
+    font-size: 20px;
+}
+
+.logo__footer img{
+    height: 50px;
+}
+.logo__phone{
+    display: inline-block;
+}
+.footer__brands_svg{
+    display: inline-block;
+    margin-top: -30px;
+    
+
+}
+.footer__brands_svg img{
+    height: 50px;
+    margin-left: 25px;
+}
+.footer__brands{
+    display: block;
+}
+.phone_svg{
+    margin-top: 5px;
+    border: none;
+    height: 50px;
+    
+}
+.xiaomi{
+    height: 120px;
+}
+.logo__phone p{
+    margin-left: 40px;
+    color: #D4BFBA;
+}

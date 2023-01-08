@@ -1,0 +1,36 @@
+body{
+    background-image: url(syrniki-tvorojnye-50-gr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+   text-align: center; 
+   color:#1D7DF3;
+   font-family:'Gabriola', cursive ;
+   font-weight: bold;
+   font-size: 45px;
+   margin: 0 auto;
+}
+hr{
+    background-color:#1D7DF3;
+    height: 1px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    
+}
+.header_img{
+    display: flex;
+    justify-content: center;
+}
+.header_img img{
+    height: 270px;
+    width: 270px;
+}
+.table{
+    font-size: 35px;
+    color:rgb(59, 1, 114);
+    font-weight: bold;
+    font-family: monospace;
+}

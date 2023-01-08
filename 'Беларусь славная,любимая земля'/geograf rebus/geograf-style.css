@@ -1,0 +1,9 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.krossvord{
+    background-image: url('krossvord geograf.png');
+    height: 500px;
+    background-size: cover;
+}

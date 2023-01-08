@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="lab6.xsl"?>
+<candies>
+    <chocolate-candy id="Candy12" production="prod">
+        <energy>10</energy>
+        <type>caramel</type>
+        <values>
+            <value>
+                <value-name>Protein</value-name>
+                <value-weight>1234</value-weight>
+            </value>
+        </values>
+        <ingredients>
+            <ingredient>
+                <ingredient-name>Ahaha</ingredient-name>
+                <ingredient-weight>999</ingredient-weight>
+            </ingredient>
+        </ingredients>
+        <date>2020-12-11</date>
+        <name>123</name>
+        <filling>true</filling>
+        <chocolate-type>lactic</chocolate-type>
+    </chocolate-candy>
+<chocolate-candy id="Candy1552" production="prod">
+        <energy>9</energy>
+        <type>caramel</type>
+        <values>
+            <value>
+                <value-name>Protein</value-name>
+                <value-weight>1234</value-weight>
+            </value>
+        </values>
+        <ingredients>
+            <ingredient>
+                <ingredient-name>Ahaha</ingredient-name>
+                <ingredient-weight>999</ingredient-weight>
+            </ingredient>
+        </ingredients>
+        <date>2020-12-11</date>
+        <name>123</name>
+        <filling>true</filling>
+        <chocolate-type>lactic</chocolate-type>
+    </chocolate-candy>
+<chocolate-candy id="Candy1122" production="prod">
+        <energy>8</energy>
+        <type>caramel</type>
+        <values>
+            <value>
+                <value-name>Protein</value-name>
+                <value-weight>1234</value-weight>
+            </value>
+        </values>
+        <ingredients>
+            <ingredient>
+                <ingredient-name>Ahaha</ingredient-name>
+                <ingredient-weight>999</ingredient-weight>
+            </ingredient>
+        </ingredients>
+        <date>2020-12-11</date>
+        <name>123</name>
+        <filling>true</filling>
+        <chocolate-type>lactic</chocolate-type>
+    </chocolate-candy>
+</candies>

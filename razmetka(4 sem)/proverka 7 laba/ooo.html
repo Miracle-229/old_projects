@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>date</title>
+</head>
+<body>
+
+
+<span id="spanOld"></span>
+<input type="text" id="old" onchange="funcOld(this)" placeholder="2018-07-09">
+<br><br>
+
+<script type="text/javascript">
+
+
+//Задача 12...
+function funcDay(elem){
+	return elem / 1000/60/60/24;
+}
+
+
+function funcOld(elem){
+	var date = new Date();
+	var now = Math.floor(funcDay(date.getTime()));
+	   var arr = String(elem.value).split('-');
+	   var strDate = date.getFullYear() + '-' + arr[1] + '-' + arr[2];
+		var span = document.getElementById('spanOld');
+	var newTime = Math.floor(funcDay(Date.parse(strDate)));
+
+	var start = date.getFullYear() + '-01-01';
+	var theEnd = date.getFullYear() + '-12-' + date.getDate();
+
+	var startTime = funcDay(Date.parse(start));
+	var theEndTime = funcDay(Date.parse(theEnd));
+
+	if(newTime > now){
+		var day = (newTime - now);
+	};
+	if(newTime === now){
+	day = 0;
+	};
+	if(newTime < now){
+		day = ((theEndTime - now)+(newTime - startTime));
+	};
+	
+
+	span.textContent = Math.ceil(day); 
+
+}
+
+
+
+
+
+
+</script>
+	
+</body>
+</html>

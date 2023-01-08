@@ -1,0 +1,18 @@
+img{
+    max-height: 35rem;
+}
+.title{
+    color: #A9A9A9;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    padding-bottom: 10px;
+}
+.name{
+    margin-left: 20px;
+    text-align: center;
+}
+

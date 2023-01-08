@@ -1,0 +1,641 @@
+@media screen and (max-width: 1185px){
+    main{
+        padding-right: 120px;
+    }
+    .object{
+        padding-right: 10px;
+    }
+    
+}
+@media screen and (max-width: 1130px){
+    main{
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    
+}
+@media screen and (max-width: 1037px){
+    main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .object{
+        height: 400px;
+    }
+    .squareimg{
+        width: 250px;
+        height: 250px;
+        background-image:250px;
+    }
+    .squareimg:hover{
+        width: 250px;
+        height: 250px;
+        background-image:250px;
+    }
+    #one {
+        width:250px; 
+        height: 250px;
+        background-size: 220px;
+    }
+.baika{
+    width: 250px;
+    height: 250px;
+    background-size: 220px;
+}
+
+    #two {
+        width:250px; 
+        height: 250px;
+        background-size: 220px;
+    }
+.djinsovka{
+    width: 250px;
+    height: 250px;
+}
+    #three {
+        width:200px;
+        height: 250px;
+        margin-left: 30px;
+        
+    }
+.djemper1{
+    width: 250px;
+    height: 250px;
+}
+    #four {
+        width:250px;
+        height: 250px;
+        background-size: 220px;
+    }
+.sport{
+    width: 250px;
+    height: 250px;
+    
+}
+    #five {
+        width:250px;
+        height: 250px;
+        background-size: 220px;
+    }
+.futbolka{
+    width: 250px;
+    height: 250px;
+}
+    #six {
+        width:250px; 
+        height: 250px;
+        background-size: 220px;
+    }
+.djemper2{
+    width: 250px;
+    height: 250px;
+}
+    
+}
+@media screen and (max-width: 985px){
+    .object{
+        height: 400px;
+    }
+    .squareimg{
+        width: 220px;
+        height: 220px;
+        background-image:220px;
+    }
+    .squareimg:hover{
+        width: 220px;
+        height: 220px;
+        background-image:250px;
+    }
+    #one {
+        width:220px; 
+        height: 220px;
+        background-size: 190px;
+        
+    }
+.baika{
+    width:220px; 
+        height: 220px;
+        background-size: 190px;
+}
+
+    #two {
+        width:220px; 
+        height: 220px;
+        background-size: 190px;
+        margin-left: 20px;
+    }
+.djinsovka{
+    width:220px; 
+        height: 220px;
+     background-size: 114px;
+    margin-left: 30px;
+}
+    #three {
+        width:220px; 
+        height: 220px;
+        margin-left: 20px;
+        
+    }
+.djemper1{
+    width:220px; 
+        height: 220px;
+     background-size: 180px;
+}
+    #four {
+         width:220px; 
+        height: 220px;
+        background-size: 190px;
+    }
+.sport{
+    width:220px; 
+        height: 220px;
+    margin-left: 0px;
+    
+}
+    #five {
+         width:220px; 
+        height: 220px;
+        background-size: 190px;
+    }
+.futbolka{
+    width:220px; 
+        height: 220px;
+    margin-left: 10px;
+        
+}
+    #six {
+         width:220px; 
+        height: 220px;
+        background-size: 190px;
+    }
+.djemper2{
+    width:220px; 
+        height: 220px;
+    background-size: 170px;
+}
+    .name{
+        font-size: 25px;
+    }
+    .shopa{
+        vertical-align: middle;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        padding: 0px;
+        border-radius: 20px;
+        
+}
+    .shop{
+    }
+}
+@media screen and (max-width: 928px){
+    .name{
+        font-size: 23px;
+    }
+    .shop{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .shopa{
+        font-size: 13px;
+        vertical-align:middle;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    .object{
+        height: 350px;
+        width: 240px;
+    }
+    .squareimg{
+        width: 200px;
+        height: 200px;
+        background-image:200px;
+    }
+    .squareimg:hover{
+          width: 200px;
+        height: 200px;
+        background-image:200px;
+    }
+    #one {
+       width: 200px;
+        height: 200px;
+        background-size: 170px;
+    }
+.baika{
+    width: 200px;
+        height: 200px;
+        background-size: 170px;
+    margin-left: 10px;
+}
+
+    #two {
+      width: 200px;
+        height: 200px;
+        background-size: 170px;
+    }
+.djinsovka{
+     width: 200px;
+        height: 200px;
+}
+    #three {
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        background-size: 170px;
+        
+    }
+.djemper1{
+    width: 200px;
+        height: 200px;
+}
+    #four {
+         width: 200px;
+        height: 200px;
+        background-size: 170px;
+        margin-left: 15px;
+    }
+.sport{
+    width: 200px;
+        height: 200px;
+    background-size: 170px;
+    
+}
+    #five {
+         width: 200px;
+        height: 200px;
+        background-size: 190px;
+    }
+.futbolka{
+    width: 200px;
+        height: 200px;
+    background-size: 150px;
+}
+    #six {
+     width: 200px;
+        height: 200px;
+        background-size: 190px;
+    }
+.djemper2{
+   width: 200px;
+        height: 200px;
+    background-size: 150px;
+}
+}
+@media screen and (max-width: 839px){
+    article{
+        height: 350px;
+    }
+    .price{
+        font-size: 23px;
+    }
+    .name{
+        font-size: 23px;
+    }
+    .shop{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .shopa{
+        font-size: 13px;
+        vertical-align:middle;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    .object{
+        height: 300px;
+    }
+    .squareimg{
+        width: 170px;
+        height: 170px;
+        background-image:170px;
+    }
+    .squareimg:hover{
+          width: 170px;
+        height: 170px;
+        background-image:170px;
+    }
+    #one {
+       width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.baika{
+    width: 170px;
+        height: 170px;
+        background-size: 150px;
+}
+
+    #two {
+      width: 170px;
+        height: 170px;
+        background-size: 150px;
+        margin-left: 10px;
+    }
+.djinsovka{
+     width: 170px;
+        height: 170px;
+    margin-left: 20px;
+}
+    #three {
+      width: 170px;
+        height: 170px;
+        margin-left: 30px;
+        background-size: 130px;
+        margin-left: 20px;
+        
+    }
+.djemper1{
+    width: 170px;
+        height: 170px;
+    background-size: 140px;
+}
+    #four {
+      width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.sport{
+   width: 170px;
+        height: 170px;
+    background-size: 150px;
+}
+    .sportik:hover{
+        height: 350px;
+    }
+    #five {
+        width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.futbolka{
+    width: 170px;
+        height: 170px;
+    background-size: 120px;
+}
+    #six {
+     width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.djemper2{
+   width: 170px;
+        height: 170px;
+    background-size: 120px;
+}
+}
+@media screen and (max-width: 746px){
+    main{
+        justify-content: center;
+        display: flex;
+    }
+    article{
+        height: 350px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: block;
+    }
+    .price{
+        font-size: 21px;
+    }
+    .name{
+        font-size: 21px;
+    }
+    .shop{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sp{
+        margin-left: 90px !important; 
+        margin-top: 32px;
+    }
+    .shopa{
+        font-size: 13px;
+        vertical-align:middle;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    .object{
+        height: 300px;
+        width: 210px;
+    }
+    .squareimg{
+        width: 170px;
+        height: 170px;
+        background-image:170px;
+    }
+    .squareimg:hover{
+          width: 170px;
+        height: 170px;
+        background-image:170px;
+    }
+    #one {
+       width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.baika{
+    width: 170px;
+        height: 170px;
+        background-size: 150px;
+}
+
+    #two {
+      width: 170px;
+        height: 170px;
+        background-size: 150px;
+        margin-left: 10px;
+    }
+.djinsovka{
+     width: 170px;
+        height: 170px;
+    margin-left: 20px;
+}
+    #three {
+      width: 170px;
+        height: 170px;
+        margin-left: 30px;
+        background-size: 130px;
+        margin-left: 20px;
+        
+    }
+.djemper1{
+    width: 170px;
+        height: 170px;
+    background-size: 140px;
+}
+    #four {
+      width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.sport{
+   width: 170px;
+        height: 170px;
+    background-size: 150px;
+}
+    .sportik:hover{
+        height: 300px;
+    }
+    #five {
+        width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.futbolka{
+    width: 170px;
+        height: 170px;
+    background-size: 120px;
+}
+    #six {
+     width: 170px;
+        height: 170px;
+        background-size: 150px;
+    }
+.djemper2{
+   width: 170px;
+        height: 170px;
+    background-size: 120px;
+}
+}
+@media screen and (max-width: 605px){
+    .navbar-brand{
+        margin-right: 90px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .article{
+        padding: 0px;
+        margin: 0 auto;
+        display: block;
+    }
+    .divpoiska{
+        margin: 0 auto;
+        width: 300px !important;
+    }
+    .polepoiska{
+        width: 300px !important;
+        margin-right: 30px;
+    }
+    .zhachok{
+        margin-left: -120px;
+        margin-top: 20px;
+    }
+}
+    main{
+        justify-content: center;
+        display: flex;
+    }
+    article{
+        height: 950px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: block;
+    }
+    .price{
+        font-size: 19px;
+    }
+    .name{
+        font-size: 19px;
+    }
+    .shop{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sp{
+        margin-left: 90px !important; 
+        margin-top: 32px;
+    }
+    .shopa{
+        font-size: 12px;
+        vertical-align:middle;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    .object{
+        height: 300px;
+        width: 210px;
+    }
+    .squareimg{
+        width: 140px;
+        height: 140px;
+        background-image:140px;
+    }
+    .squareimg:hover{
+          width: 140px;
+        height: 140px;
+        background-image:140px;
+    }
+    #one {
+       width: 140px;
+        height: 140px;
+        background-size: 120px;
+    }
+.baika{
+    width: 140px;
+        height: 140px;
+        background-size: 120px;
+}
+
+    #two {
+      width: 140px;
+        height: 140px;
+        background-size: 120px;
+        margin-left: 10px;
+    }
+.djinsovka{
+     width: 140px;
+        height: 140px;
+        background-size: 120px;
+    margin-left: 20px;
+}
+    #three {
+     width: 140px;
+        height: 140px;
+        background-size: 120px;
+        margin-left: 20px;
+        
+    }
+.djemper1{
+  width: 140px;
+        height: 140px;
+        background-size: 120px;
+    background-size: 140px;
+}
+    #four {
+     width: 140px;
+        height: 140px;
+        background-size: 120px;
+        background-size: 150px;
+    }
+.sport{
+   width: 140px;
+        height: 140px;
+        background-size: 120px;
+    background-size: 150px;
+}
+    .sportik:hover{
+        height: 300px;
+    }
+    #five {
+        width: 140px;
+        height: 140px;
+        background-size: 120px;
+    }
+.futbolka{
+    width: 140px;
+        height: 140px;
+        background-size: 120px;
+}
+    #six {
+     width: 140px;
+        height: 140px;
+        background-size: 120px;
+    }
+.djemper2{
+  width: 140px;
+        height: 140px;
+        background-size: 120px;
+}
+}

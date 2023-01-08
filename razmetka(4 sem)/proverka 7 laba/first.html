@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<style>
+.page{
+    border:solid 1px black;
+    width:800px;
+    margin:0px auto;
+    height:500px;
+    text-align:center;
+    position:relative
+}
+input[type='button']{
+    vertical-align:bottom;
+    display:block;
+    margin:0px auto;
+}
+</style>
+
+<script>
+
+function funcDay(elem){
+	return elem / 1000/60/60/24;
+}
+function funcOld(elem){
+	var date = new Date();
+	var now = Math.floor(funcDay(date.getTime()));
+	   var arr = String(elem.value).split('-');
+	   var strDate = date.getFullYear() + '-' + arr[1] + '-' + arr[2];
+		var span = document.getElementById('result');
+	var newTime = Math.floor(funcDay(Date.parse(strDate)));
+
+	var start = date.getFullYear() + '-01-01';
+	var theEnd = date.getFullYear() + '-12-' + date.getDate();
+
+	var startTime = funcDay(Date.parse(start));
+	var theEndTime = funcDay(Date.parse(theEnd));
+
+	if(newTime > now){
+		var day = (newTime - now);
+	};
+	if(newTime === now){
+	day = 0;
+	};
+	if(newTime < now){
+		day = ((theEndTime - now)+(newTime - startTime));
+	};
+	
+
+	span.value= Math.ceil(day); 
+}
+function new_page(){
+    this._startBalloon = document.getElementById("fP").value;
+    this._finishBalloon = document.getElementById("sP").value;
+    var len = document.getElementById("result").value;
+    var res = document.getElementById("cs").value;
+    localStorage.setItem("flag",true);
+    localStorage.setItem("startPoint",this._startBalloon);
+    localStorage.setItem("finishPoint",this._finishBalloon);
+    localStorage.setItem("distance",len);
+    localStorage.setItem("cost",res);
+    window.location = "index.html";
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function() { // событие загрузки страницы
+
+// выбираем на странице все элементы типа textarea и input
+document.querySelectorAll('textarea,span,input').forEach(function(e) {
+    // если данные значения уже записаны в sessionStorage, то вставляем их в поля формы
+    // путём этого мы как раз берём данные из памяти браузера, если страница была случайно перезагружена
+    if(e.value === '') e.value = window.sessionStorage.getItem(e.name, e.value);
+    // на событие ввода данных (включая вставку с помощью мыши) вешаем обработчик
+    e.addEventListener('input,span', function() {
+        // и записываем в sessionStorage данные, в качестве имени используя атрибут name поля элемента ввода
+        window.sessionStorage.setItem(e.name, e.value);
+    })
+})
+
+}); 
+
+
+</script>
+</head>
+<body>
+    <div class="page">
+<h1>Какая то информация</h1>
+Начальная точка <label id="firstPoint"></label><br>
+Конечная точка <label id="secondPoint"><input id="sP" type="text" required></label><br>
+Расстояние <label id="distance"><input onchange="funcOld(this)"  type="date" /></label>
+
+<span id="result"></span>
+<br>
+
+   
+<form>
+  
+    Стоимость <label id="cost"><input id="cs"  type="text" /></label>
+<p><input type="button" value="Отправить данные на другую страницу" onclick=" new_page()"/></p>
+<input id="fP" type="text" />
+   </form>
+
+</div>
+</body>
+</html>                

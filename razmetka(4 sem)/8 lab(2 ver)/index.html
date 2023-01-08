@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+<div class="calculator">
+    <output></output>
+</div>
+<script src="https://unpkg.com/mathjs@10.4.1/lib/browser/math.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+<script>
+    const output = document.querySelector('output');
+    const div = document.createElement('div');
+    div.className += 'keyboard';
+    document.querySelector('.calculator').appendChild(div);
+    const buttons =
+        'Tan C <= % / ' +
+        'CEIL 7 8 9 * ' +
+        'SinH 4 5 6 - ' +
+        'Сot 1 2 3 + ' +
+        '. 0 ( ) = ' +
+        'Sqrt';
+    buttons.split(' ').map(key => {
+        div.insertAdjacentHTML('beforeend', `<button value="${key}">${key}</button>`)
+    });
+    document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', function () {
+            calculate(this.value);
+        });
+    });
+    document.addEventListener('keydown', e => {
+       if((e.key).match(/[0-9%\/*\-+\(\)=.]|Backspace|Enter/))
+           calculate(e.key);
+    });
+    function finiteTest (value) {
+        return value == '-Infinity' || value == 'Infinity' || isNaN(value) ? 'Ошибка' : value;
+    }
+    //const m = math.create(math.all, {});
+    function calculate(key){
+        try{
+
+            switch(key){
+                case "Enter":
+                case "=":
+                    const result = math.evaluate(output.textContent);
+                    output.textContent = finiteTest(result);
+                    break;
+                case 'PI':
+                    output.textContent = math.PI.toFixed(4);
+                    break;
+                case 'SinH':
+                    output.textContent = math.sinh(output.textContent);
+                    break;
+                case 'CEIL':
+                    output.textContent = math.floor(output.textContent);
+                    break;
+                case 'Сot':
+                    output.textContent =1/math.tan(output.textContent);
+                    break;
+                case 'Tan':
+                    output.textContent =math.tan(output.textContent);
+                    break;
+                case 'Sqrt':
+                    if(output.textContent >= 0){
+                        math.isComplex();
+                        output.textContent = math.sqrt(output.textContent);
+                    } else {
+                        output.textContent = "Недопустимое значение!"
+                    }
+                    break;
+                case 'C':
+                    output.textContent = '';
+                    break;
+                case '<=':
+                case 'Backspace':
+                    output.textContent = output.textContent.substring(0, output.textContent.length - 1);
+                    break;
+                default:
+                    output.textContent += key;
+            }
+        } catch {
+            output.textContent = 'Привет.';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="lab6.xsl"?>
+
+<music>
+    <musicstore  production="prod">
+        <name>Antarctica</name>
+        <type>Rap</type>
+        <authors>
+                <author>
+                    <author-name>$uicideboy$</author-name>
+                    <author-age>27</author-age>
+                </author>
+        </authors>
+        <duration>2.31</duration>
+        <date>2021-12-11</date>
+    </musicstore>
+    <musicstore  production="prod">
+        <name>Balamut</name>
+        <type>Rock</type>
+        <authors>
+            <author>
+                <author-name>Smeshariki</author-name>
+                <author-age>11</author-age>
+            </author>
+        </authors>
+        <duration>3.34</duration>
+        <date>2008-12-11</date>
+    </musicstore>
+    <musicstore  production="prod">
+        <name>Severnoe Siyanie</name>
+        <type>HipHop</type>
+        <authors>
+            <author>
+                <author-name>Ivan Dorn</author-name>
+                <author-age>100</author-age>
+            </author>
+        </authors>
+        <duration>4.01</duration>
+        <date>2019-10-09</date>
+    </musicstore>
+</music>

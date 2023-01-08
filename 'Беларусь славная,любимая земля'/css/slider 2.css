@@ -1,0 +1,334 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	background: #120103;
+}
+
+header {
+	background: #3e474f62;
+	box-shadow: 0 .5em 1em #111;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+}
+
+header a {
+	color: #7888188;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 4.25em;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0 1em;
+	transition: 0.3s;
+}
+
+header a:hover {
+	background: rgba(0, 0, 0, 0.315);
+	transition: 0.5s;
+}
+label {
+	color: #7888188;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 4.25em;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0 1em;
+	transition: 0.3s;
+}
+
+label:hover {
+	background: rgba(0, 0, 0, 0.315);
+	transition: 0.5s;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: left 0s .75s;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: left 0s .75s;
+}
+.slide-one{
+	background-image: url('belovesha.png');;
+}
+.slide-two{
+	background-image:url('braslavskie ozera.jpg');
+}
+.slide-three{
+	background-image:url('naroch.jpg');
+}
+.slide-four{
+	background-image: url('berezina.jpg');
+}
+.slide-5{
+	background-image: url('lidski.jpg');
+}
+.slide-6{
+	background-image: url('puslovskie.jpg');
+}
+.slide-7{
+	background-image: url('nesvish.jpg');
+}
+.slide-8{
+	background-image: url('biblioteka.jpg');
+}
+.slide-9{
+	background-image: url('bazar.jpg');
+}
+.slide-10{
+	background-image: url('listapad.jpg');
+}
+.slide-11{
+	background-image: url('annenskiy.jpg');
+}
+.slide-12{
+	background-image: url('turnir.jpg');
+}
+.text{
+    color:blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+[id^='slide']:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+}
+
+[id^='slide']:checked + .slide h1 {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s .5s;
+}
+#box1{
+    display: none;
+}
+#box2{
+    display: none;
+}
+#box3{
+    display: none;
+}
+#slide-back1{
+	background-image: url('bazar.jpg');;
+}
+a{
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.315);
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	outline: none;
+	color: white;
+	transition: 0.4s;
+}
+a:hover{
+	font-size: 22px;
+	transition: 0.4s;
+}
+#zatemnenie {
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z2{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z3{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z4{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z5{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z6{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z7{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z8{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z9{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z10{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z11{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+  #z12{
+	background-image: url('backgound-button.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	margin-top:1000px;
+  }
+
+  #okno {
+	display: block;
+	padding: 15px;
+	border: 3px solid #0000cc;
+	border-radius: 10px;
+	color: #0000cc;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: #fff;
+  }
+  #zatemnenie:target {display: block;}
+  #z2:target {display: block;}
+  #z3:target {display: block;}
+  #z4:target {display: block;}
+  #z5:target {display: block;}
+  #z6:target {display: block;}
+  #z7:target {display: block;}
+  #z8:target {display: block;}
+  #z9:target {display: block;}
+  #z10:target {display: block;}
+  #z11:target {display: block;}
+  #z12:target {display: block;}
+  .close {
+	display: inline-block;
+	border: 1px solid #0000cc;
+	color: #0000cc;
+	padding: 0 12px;
+	margin: 10px;
+	text-decoration: none;
+	background: #f2f2f2;
+	font-size: 14pt;
+	cursor:pointer;
+  }
+  .close:hover {background: #e6e6ff;}
+  .home{
+	  margin-top: 35px;
+	  display:inline-block;
+		background: transparent;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		color:rgb(1, 26, 27);
+		font-size: 10px;
+		background: white;
+  }
+  .home:hover{
+	  font-size: 12px;
+  }

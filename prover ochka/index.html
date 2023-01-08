@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .invalid { border-color: red; }
+      #error { color: red }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+ 
+<form action="">
+      
+ <input class="input input-tag">
+    
+  <div id="error"></div>
+  <input type="submit">
+</form>
+
+    
+    <script>
+      let input=document.querySelector(".input-tag");
+      console.log(input)
+      document.querySelector(".input-tag").onblur = function() {
+      if (!input.value.includes('@')) { // не email
+        input.classList.add('invalid');
+        error.innerHTML = 'Пожалуйста, введите правильный email.'
+      }
+    };
+    
+    // document.querySelector(".input-tag").onfocus = function() {
+    //   if (this.classList.contains('invalid')) {
+    //     this.classList.remove('invalid');
+    //     error.innerHTML = "";
+    //   }
+    // };
+    // function submitExp(){
+    //   if(error.innerHTML=='Пожалуйста, введите правильный email.'){
+    //     event.preventDefault();
+    //   }
+    // }
+    // document.querySelector("form").addEventListener("submit",submitExp)
+    </script>
+  </body>
+</html>

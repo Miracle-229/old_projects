@@ -1,0 +1,101 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    
+}
+#krossvord{
+    background-size: cover;
+    display: none;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+#imgr{
+    margin-top: 100px;
+    display: none;
+}
+.section{
+    margin-top: 50px;
+}
+.response-section{
+    display:inline-block;
+    justify-content: center;
+    padding: 5px;
+    color: transparent;
+background: red;
+    transform: rotate(-180deg);
+    text-align: center;
+    font-family:sans-serif;
+    transition: 0.7s;
+}
+
+.response-section:hover{
+    color: white;
+    transition: 0.7s;
+    background: green;
+}
+.response-section img{
+    transform: rotate(-180deg);
+    max-width: 100%;
+
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+    background: green;
+    color: white;
+    height: 50px;
+    padding-top: 50px;
+}
+.podzkaska{
+    display: inline-block;
+    margin-left: 10px;
+    color: transparent;
+    transition: 0.7s;
+    font-family: sans-serif;
+    background: #AAAAAA;
+    padding: 3px;
+}
+span{
+    color: black;
+}
+.podzkaska::before{
+    content: "Подсказка ";
+    color: black;
+}
+.podzkaska:hover::before{
+    content: "Подсказка ";
+    color: transparent;
+    
+}
+.podzkaska:hover{
+    color: black;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.input{
+    background: red;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    transition: 0.7s;
+    margin-top: 20px;
+}
+
+.input:hover{
+    cursor:pointer;
+    background:green;
+    transition: 0.7s;
+    
+    
+}
+h2{
+    color: rgb(8, 110, 107);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

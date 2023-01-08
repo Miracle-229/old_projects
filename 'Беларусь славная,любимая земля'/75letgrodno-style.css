@@ -1,0 +1,44 @@
+body{
+    background-image: url(bacgroundgrodno75.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 25px 10px 25px;
+}
+h1{
+    font-size: 45px;
+    font-family: 'Roboto Slab', serif;
+}
+p{
+}
+.content{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.img-content{
+    max-height: 400px;
+    margin-top: 20px;
+    float: left;
+    padding-right: 45px;
+    margin-bottom: 30px;
+}
+.vov{
+  justify-content: center; 
+  display: block;
+}
+.home{
+    margin-top: 35px;
+    display:inline-block;
+      background: transparent;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:rgb(1, 26, 27);
+      font-size: 10px;
+      background: white;
+      transition: 0.4s;
+      outline: none;
+      text-decoration: none;
+      padding: 10px 15px 10px 15px;
+}
+.home:hover{
+    font-size: 12px;
+    transition: 0.4s;
+}

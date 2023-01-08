@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Grotecki";
+    src: url(/font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Grotecki";
+    font-weight: 500;
+}
+
+p{
+    color: white;
+}
+input::placeholder{
+    font-family: "Grotecki";
+    color: #D2D0D2;
+}
+input{
+    font-family: "Grotecki";
+    padding-left: 15px;
+}
+#error{
+    color:red;
+}
+.invalid{
+    border-color: red;
+}
+main{
+    display: flex;
+}
+aside{
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 100vh;
+    overflow: hidden;
+}
+section{
+    height: 100vh;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.aside-fontcard{
+    background-image: url(/images/bg-card-front.png);
+    height: 218px;
+    width: 400px;
+    margin-left:200px ;
+    margin-top: 100px;
+    position:absolute;
+    border-radius: 3%;
+    
+}
+.two{
+    background-image: url(/images/bg-card-back.png);
+    background-position: center;
+    background-size: 100%;
+    margin-top: 350px;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    P{
+        margin-right: 45px;
+    }
+}
+.one{
+    display: block;
+}
+.aside-fontcard-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 35px;
+    
+}
+.aside-fontcard-top{
+    margin-top: 100px;
+}
+
+.font-top{
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+
+}
+.font-top-age{
+    display: flex;
+    justify-content: center;
+}
+.input-name{
+    color: black;
+}
+.section-last{
+    display: flex;
+    justify-content: center;
+    input{
+    border: none; 
+    border:solid 1px ;
+    border-color: #ccc;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+    &:nth-child(3){
+        width: 160px;
+    }
+    }
+}
+.section-last-p{
+    justify-content: space-around;
+}
+.input-first{
+    width: 100%;
+    border: none; 
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    height: 40px;
+}
+.section-submit{
+    margin-top: 30px;
+    input{
+        width: 100%;
+    }
+}
+

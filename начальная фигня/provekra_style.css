@@ -1,0 +1,17 @@
+body{
+    font-family: monospace;
+}
+.back-to-top{
+    text-decoration: none;
+    color: white;
+    background: red;
+    border-radius: 50%;
+     position: fixed;
+    right: 10px;
+    bottom: 70px;
+    width: 50px;
+}
+.back-to-top:hover{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normilize.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javacript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body id="transiton_disable">
+    <div class="page">
+    <header>
+        <div class="float_left">  
+        <img class="logo" src="Logo.png" alt="">
+        <img class="logo_name" src="name.png">
+        </div>
+        <div class="float_right">
+            <select onchange="window.location.href = this.options[this.selectedIndex].value">
+            <option value="index.html">РУС</option>
+            <option value="index2.html">ENG</option>
+        </select>
+    </div>
+    </header>
+    <main>
+        <ul class="cb-slideshow">
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+        <div class="inf_shadow">
+            <img src="shadow.png" alt="">
+        </div>
+        <article class="section_1">
+             
+        <div class="button_1">
+            <div class="button_title">
+            <div class="firstline_button__1">Выставка</div><br>
+            CТАРАЯ<br> ВЫЧИСЛИТЕЛЬНАЯ<br> ТЕХНИКА<br>
+        </div>
+           <div class="endline_button__1"> интерактивная экскурсия</div>
+        </div>
+    </article>
+    <article class="section_2">
+        <a href="#">
+        <div class="button_2">
+          <a href=""><img src="3600.png" alt=""></a> 
+        </div>
+    </a>
+    </article>
+
+    </main>
+    <footer>
+        <div class="social">
+           <a href="https://www.instagram.com/grsu_grodno/"><img class="social_img" src="instagram.svg" alt="=instagram"></a> 
+           <a href="https://vk.link/luvhub"><img class="social_img"  src="vk.svg" alt="vk"></a> 
+           <a href="t.me/grsu_official"><img class="social_img"  src="telegram.svg" alt="vk"></a> 
+        </div>
+
+        <div class="information">
+            <div class="blookinf">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"> Контакты</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      123123123<br>
+                      213123<br>
+                      21<br>
+                      312<br>
+                      3<br>
+                      123<br>
+
+                    </div>
+                  </div>
+               
+                
+            
+            <a class="links" >О музее</a>
+            
+        </div>
+        <div class="line first">
+            <a href="https://instagram.com/grsu_museum?igshid=jvntbvdq6bxf"><img class="social_img" src="instagram.svg" alt="=instagram"></a> 
+           <a href="https://vk.link/luvhub"><img class="social_img"  src="vk.svg" alt="vk"></a> 
+           <a href="t.me/grsu_official"><img class="social_img"  src="telegram.svg" alt="vk"></a> 
+        </div>
+        <div class="line two">
+            Музей факльтета математики и информатики ГрГУ
+        </div>
+        <div class="line three">
+           2020
+        </div>
+        </div>
+        <div class="grsu">
+            <img src="logo grsu.png" alt="grsu">
+        </div>
+    </footer>
+
+
+</div>
+<script>
+    function myFunction() {
+  document.getElementsByClassName("line").style.marginTop = '200px';
+    }
+    </script>
+
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+   
+    <script>
+        $("window").load(function() {
+    $("body").removeId("transiton_disable");
+  });
+        </script>
+    
+
+</body>
+</html>

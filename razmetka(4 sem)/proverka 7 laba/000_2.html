@@ -1,0 +1,46 @@
+<div class="steam-box">
+    <h2>Login</h2>
+    <form>
+        <div class="input-box">
+            <input type="text" name="login" id="login" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-box">
+            <input type="text" name="loginr" id="loginr" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-box">
+            <input type="password" name="password1"  id="password" required>
+            <label>Password</label>
+            <div id="toggle" onclick=" showHide();"></div>
+        </div>
+       
+        <input type="submit" value="Sign in">
+    </form>
+    <script>
+        const form = document.forms[0];
+const text = form.querySelectorAll(`.input-box`);
+
+let textLogin = text[0].querySelector(`label`);
+let textLoginr = text[1].querySelector(`label`);
+let textPass = text[2].querySelector(`label`);
+
+
+form.addEventListener(`submit`, (evt) => {
+  evt.preventDefault();
+   if (form.elements.login.value === '') {
+    textLogin.textContent = `Заполните поле`;
+   } 
+    else if (form.elements.loginr.value === '' ) {
+    textLoginr.textContent = `Заполните поле`;
+}
+   else if (form.elements.password.value === '' ) {
+    textPass.textContent = `Заполните поле`;
+   } else {
+    document.location.href = "second.html";
+   }
+});
+    </script>
+</div>
